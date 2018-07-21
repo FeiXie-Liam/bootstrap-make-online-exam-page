@@ -1,33 +1,146 @@
 <html>
-    <head>
-        <link rel="stylesheet" href="./bootstrap-3.3.7-dist/css/bootstrap.css">
-        <script src="./jquery-3.2.1.js"></script>        
-        <script src="./bootstrap-3.3.7-dist/js/bootstrap.js"></script>
-    </head>
-    <body>
-        <!--write your code here-->
-        <!-- Button trigger modal -->
-<button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal">
-  Launch demo modal
-</button>
 
-<!-- Modal -->
-<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
-  <div class="modal-dialog" role="document">
-    <div class="modal-content">
-      <div class="modal-header">
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-        <h4 class="modal-title" id="myModalLabel">Modal title</h4>
+<head>
+  <link rel="stylesheet" href="./bootstrap-3.3.7-dist/css/bootstrap.css">
+  <script src="./jquery-3.2.1.js"></script>
+  <script src="./bootstrap-3.3.7-dist/js/bootstrap.js"></script>
+</head>
+
+<body>
+  <!--write your code here-->
+  <div class="container">
+    <div class="row">
+      <h3>统一建模语言理论测试</h3>
+      <div class="row">
+        <div class="col-sm-3">考试科目：统一建模语言</div>
+        <div class="col-sm-3">时间：100分钟</div>
+        <div class="col-sm-3">得分：100</div>
       </div>
-      <div class="modal-body">
-        You're ready to go!
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-        <button type="button" class="btn btn-primary">Save changes</button>
+      <div class="row">
+        <div class="col-sm-3">班级：
+          <input type="class" value="1班">
+        </div>
+        <div class="col-sm-3">学号：
+          <input type="id" value="001">
+        </div>
+        <div class="col-sm-3">姓名：
+          <input type="name" value="王小闹">
+        </div>
       </div>
     </div>
+    <div class="row ">
+      <h4>一、填空题（每空5分，共20分）</h4>
+      <ol>
+        <li>UML的中文全称是：
+          <input value="统一建模语言">
+        </li>
+        <li>对象最突出的特征是：
+          <input value="封装性">
+          <input value="继承性">
+          <input value="多态性">
+        </li>
+      </ol>
+    </div>
+    <div class="row ">
+      <h4>二、选择题（每题10分，共20分）</h4>
+      <ol>
+        <li>UML与软件工程的关系是：
+          <br>
+          <form action="/action_page.php">
+            <input type="radio" name=“option” id="2-1A">
+            <label for="2-1A">（A）UML就是软件工程</label>
+            <br>
+            <input type="radio" name=“option” id="2-1B" checked>
+            <label for="2-1B">（B）UML参与到软件工程中软件开发过程的几个阶段</label>
+            <br>
+            <input type="radio" name=“option” id="2-1C">
+            <label for="2-1C">（C）UML与软件开发无关</label>
+            <br>
+            <input type="radio" name=“option” id="2-1D">
+            <label for="2-1D">（D）UML是软件工程的一部分</label>
+          </form>
+        </li>
+        <li>Java语言支持：
+          <br>
+          <input type="radio" name=“option” id="2-2A" checked>
+          <label for="2-2A">（A）单继承</label>
+          <br>
+          <input type="radio" name=“option” id="2-2B">
+          <label for="2-2B">（B）多继承</label>
+          <br>
+          <input type="radio" name=“option” id="2-2C">
+          <label for="2-2C">（C）单继承和多继承都支持</label>
+          <br>
+          <input type="radio" name=“option” id="2-2D">
+          <label for="2-2D">（D）单继承和多继承都不支持</label>
+        </li>
+      </ol>
+    </div>
+    <div class="row ">
+      <h4>三、多择题（每题10分，共20分）</h4>
+      <ol>
+        <li>用例的粒度分为以下几种：
+          <br>
+          <input type="checkbox" id="3-1A" checked>
+          <label for="3-1A">（A）概述级</label>
+          <br>
+          <input type="checkbox" id="3-1B" checked>
+          <label for="3-1B">（B）需求级</label>
+          <br>
+          <input type="checkbox" id="3-1C">
+          <label for="3-1C">（C）用户目标级</label>
+          <br>
+          <input type="checkbox" id="3-1D" checked>
+          <label for="3-1D">（D）子功能级</label>
+        </li>
+        <li>类图由以下哪三部分组成：
+          <br>
+          <input type="checkbox" id="3-2A" checked>
+          <label for="3-2A">（A）名称（Name）</label>
+          <br>
+          <input type="checkbox" id="3-2B" checked>
+          <label for="3-2B">（B）属性（Attribute）</label>
+          <br>
+          <input type="checkbox" id="3-2C" checked>
+          <label for="3-2C">（C）操作（Operation）</label>
+          <br>
+          <input type="checkbox" id="3-2D">
+          <label for="3-2D">（D）方法（Function）</label>
+        </li>
+      </ol>
+    </div>
+    <div class="row ">
+      <h4>四、判断题（每题10分，共20分）</h4>
+      <ol>
+        <li>用例只是用于和客户交流和沟通的，用于确定需求。
+          <input type="radio" name="option" id="4-1A">
+          <label for="4-1A">√</label>
+          <input type="radio" name="option" id="4-1B" checked>
+          <label for="4-1B">×</label>
+        </li>
+        <li>在状态图中，终止状态在一个状态图中允许有任意多个。
+          <input type="radio" name="option" id="4-2A" checked>
+          <label for="4-2A">√</label>
+          <input type="radio" name="option" id="4-2B">
+          <label for="4-2B">×</label>
+        </li>
+      </ol>
+    </div>
+    <div class="row ">
+      <h4>五、简答题（每题20分，共20分）</h4>
+      <ol>
+        <li>
+          简述什么是模型以及模型的表现形式？
+          <br>
+          <textarea cols="90" rows="6">模型是对现实世界的简化和抽象，模型是对所研究的系统、过程、事物或概念的一种表达形式，可以是物理实体；可以是某种图形；或者是一种数学表达式。
+          </textarea>
+        </li>
+      </ol>
+    </div>
+    <div>
+      <input type="submit" value="计算分数">
+    </div>
   </div>
-</div>
-    </body>
+</body>
+
 </html>
